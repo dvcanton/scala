@@ -1,9 +1,9 @@
-class ExampleJob{
-  private var sc:   SparkContext;
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import org.apache.spark.SparkConf
+import org.apache.spark.rdd.RDD
 
-  public ExampleJob(SparkContext sc) {
-    this.sc = sc;
-  }
+class SimpleJob(sc: SparkContext) {  
 
   def run(t: String, u: String) : RDD[(String, String)] = {
     val transactions = sc.textFile(t)
@@ -33,7 +33,7 @@ class ExampleJob{
   }
 }
 
-object ExampleJob {
+object ExampleJobDemo {
   def main(args: Array[String]) {
         val transactionsIn = args(1)
         val usersIn = args(0)
@@ -43,11 +43,11 @@ object ExampleJob {
                                   .setMaster("local")
         val sc = new SparkContext(conf)
 
-        val job = new ExampleJob(sc)
+        val job = new SimpleJob(sc)
         val results = job.run(transactionsIn, usersIn)
         val output = args(2)
         results.saveAsTextFile(output)
-        context.stop()
+        sc.stop()
   }
 }
 
@@ -58,4 +58,4 @@ users
 1 matthew@test.com  EN  US
 2 matthew@test2.com EN  GB
 3 matthew@test3.com FR  FR
-/*
+*/

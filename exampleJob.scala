@@ -1,5 +1,5 @@
 class ExampleJob{
-  private static SparkContext sc;
+  private var : SparkContext sc;
 
   public ExampleJob(SparkContext sc) {
     this.sc = sc;

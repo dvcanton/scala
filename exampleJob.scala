@@ -1,14 +1,7 @@
-import org.apache.hadoop.mapred.TextOutputFormat;
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaPairRDD;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
-import org.apache.spark.api.java.function.PairFunction;
-
 class ExampleJob{
-  private static JavaSparkContext sc;
+  private static SparkContext sc;
 
-  public ExampleJob(JavaSparkContext sc) {
+  public ExampleJob(SparkContext sc) {
     this.sc = sc;
   }
 

@@ -1,24 +1,42 @@
-class ExampleJob(sc: SparkContext) {
+import org.apache.hadoop.mapred.TextOutputFormat;
+import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
+import org.apache.spark.api.java.JavaRDD;
+import org.apache.spark.api.java.JavaSparkContext;
+import org.apache.spark.api.java.function.PairFunction;
+
+class ExampleJob{
+  private static JavaSparkContext sc;
+
+  public ExampleJob(JavaSparkContext sc) {
+    this.sc = sc;
+  }
+
   def run(t: String, u: String) : RDD[(String, String)] = {
-        val transactions = sc.textFile(t)
-  val newTransactionsPair = transactions.map{t =>
+    val transactions = sc.textFile(t)
+
+    // Transforming the transactions text file into a Key/Value RDD
+    val newTransactionsPair = transactions.map{t =>
       val p = t.split("\t")
       (p(2).toInt, p(1).toInt)
-  }
 
-  val users = sc.textFile(u)
-  val newUsersPair = users.map{t =>
+    }
+
+    // Transforming the users text file into a Key/Value RDD
+
+    val users = sc.textFile(u)
+    val newUsersPair = users.map{t =>
       val p = t.split("\t")
       (p(0).toInt, p(3))
-  }
+    }
 
-  val result = processData(newTransactionsPair, newUsersPair)
-  return sc.parallelize(result.toSeq).map(t => (t._1.toString, t._2.toString))
+    val result = processData(newTransactionsPair, newUsersPair)
+    return sc.parallelize(result.toSeq).map(t => (t._1.toString, t._2.toString))
   }
 
   def processData (t: RDD[(Int, Int)], u: RDD[(Int, String)]) : Map[Int,Long] = {
-  var jn = t.leftOuterJoin(u).values.distinct
-  return jn.countByKey
+    var jn = t.leftOuterJoin(u).values.distinct
+    return jn.countByKey
   }
 }
 
@@ -26,12 +44,25 @@ object ExampleJob {
   def main(args: Array[String]) {
         val transactionsIn = args(1)
         val usersIn = args(0)
-        val conf = new SparkConf().setAppName("SparkJoins").setMaster("local")
-        val conext = new SparkContext(conf)
-        val job = new ExampleJob(context)
+
+        // Defining the Spark Context
+        val conf = new SparkConf().setAppName("SparkJoins")
+                                  .setMaster("local")
+        val sc = new SparkContext(conf)
+
+        val job = new ExampleJob(sc)
         val results = job.run(transactionsIn, usersIn)
         val output = args(2)
         results.saveAsTextFile(output)
         context.stop()
   }
 }
+
+
+/*
+
+users
+1 matthew@test.com  EN  US
+2 matthew@test2.com EN  GB
+3 matthew@test3.com FR  FR
+/*

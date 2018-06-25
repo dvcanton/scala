@@ -1,7 +1,9 @@
 import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import org.apache.spark.SparkConf
+import org.apache.spark.rdd.RDD
 
-
-class ExampleJob(SparkContext : sc) {
+class SimpleJob(sc: SparkContext) {
 
   def run(t: String, u: String) : RDD[(String, String)] = {
     val transactions = sc.textFile(t)
@@ -31,7 +33,7 @@ class ExampleJob(SparkContext : sc) {
   }
 }
 
-object ExampleJob {
+object ExampleJobDemo {
   def main(args: Array[String]) {
         val transactionsIn = args(1)
         val usersIn = args(0)
@@ -41,11 +43,11 @@ object ExampleJob {
                                   .setMaster("local")
         val sc = new SparkContext(conf)
 
-        val job = new ExampleJob(sc)
+        val job = new SimpleJob(sc)
         val results = job.run(transactionsIn, usersIn)
         val output = args(2)
         results.saveAsTextFile(output)
-        context.stop()
+        sc.stop()
   }
 }
 

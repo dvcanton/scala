@@ -1,9 +1,7 @@
-class ExampleJob{
-  private var sc:   SparkContext;
+import org.apache.spark.SparkContext
 
-  public ExampleJob(SparkContext sc) {
-    this.sc = sc;
-  }
+
+class ExampleJob(SparkContext : sc) {
 
   def run(t: String, u: String) : RDD[(String, String)] = {
     val transactions = sc.textFile(t)
@@ -53,9 +51,8 @@ object ExampleJob {
 
 
 /*
-
 users
 1 matthew@test.com  EN  US
 2 matthew@test2.com EN  GB
 3 matthew@test3.com FR  FR
-/*
+*/

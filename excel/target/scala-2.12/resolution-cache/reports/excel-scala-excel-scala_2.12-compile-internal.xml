@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="excel-scala"
+		module="excel-scala_2.12"
+		revision="1.0.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20180803145259"/>
+	<dependencies>
+		<module organisation="info.folone" name="poi-scala_2.12">
+			<revision name="0.18" status="release" pubdate="20161216084526" resolver="public" artresolver="public" homepage="https://github.com/folone/poi.scala" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License" url="http://opensource.org/licenses/Apache-2.0"/>
+				<metadata-artifact status="successful" details="" size="4120" time="583" location="/home/dv/.ivy2/cache/info.folone/poi-scala_2.12/ivy-0.18.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/info.folone/poi-scala_2.12/ivy-0.18.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/info/folone/poi-scala_2.12/0.18/poi-scala_2.12-0.18.pom"/>
+				<caller organisation="excel-scala" name="excel-scala_2.12" conf="compile-internal, compile, provided, optional" rev="0.18" rev-constraint-default="0.18" rev-constraint-dynamic="0.18" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="poi-scala_2.12" type="jar" ext="jar" status="successful" details="" size="107889" time="2501" location="/home/dv/.ivy2/cache/info.folone/poi-scala_2.12/jars/poi-scala_2.12-0.18.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/info/folone/poi-scala_2.12/0.18/poi-scala_2.12-0.18.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-effect_2.12">
+			<revision name="7.2.8" status="release" pubdate="20161203105941" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="3011" time="535" location="/home/dv/.ivy2/cache/org.scalaz/scalaz-effect_2.12/ivy-7.2.8.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.scalaz/scalaz-effect_2.12/ivy-7.2.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.12/7.2.8/scalaz-effect_2.12-7.2.8.pom"/>
+				<caller organisation="info.folone" name="poi-scala_2.12" conf="default, compile, runtime, master" rev="7.2.8" rev-constraint-default="7.2.8" rev-constraint-dynamic="7.2.8" callerrev="0.18"/>
+				<artifacts>
+					<artifact name="scalaz-effect_2.12" type="bundle" ext="jar" status="successful" details="" size="296707" time="2992" location="/home/dv/.ivy2/cache/org.scalaz/scalaz-effect_2.12/bundles/scalaz-effect_2.12-7.2.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-effect_2.12/7.2.8/scalaz-effect_2.12-7.2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalaz" name="scalaz-core_2.12">
+			<revision name="7.2.8" status="release" pubdate="20161203110121" resolver="public" artresolver="public" homepage="http://scalaz.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="BSD-style" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="2829" time="565" location="/home/dv/.ivy2/cache/org.scalaz/scalaz-core_2.12/ivy-7.2.8.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.scalaz/scalaz-core_2.12/ivy-7.2.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.12/7.2.8/scalaz-core_2.12-7.2.8.pom"/>
+				<caller organisation="info.folone" name="poi-scala_2.12" conf="default, compile, runtime, master" rev="7.2.8" rev-constraint-default="7.2.8" rev-constraint-dynamic="7.2.8" callerrev="0.18"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.12" conf="compile, runtime" rev="7.2.8" rev-constraint-default="7.2.8" rev-constraint-dynamic="7.2.8" callerrev="7.2.8"/>
+				<artifacts>
+					<artifact name="scalaz-core_2.12" type="bundle" ext="jar" status="successful" details="" size="7665664" time="13069" location="/home/dv/.ivy2/cache/org.scalaz/scalaz-core_2.12/bundles/scalaz-core_2.12-7.2.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalaz/scalaz-core_2.12/7.2.8/scalaz-core_2.12-7.2.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi-ooxml">
+			<revision name="3.14" status="release" pubdate="20160306085950" resolver="public" artresolver="public" homepage="http://poi.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2719" time="550" location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml/ivy-3.14.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml/ivy-3.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.pom"/>
+				<caller organisation="info.folone" name="poi-scala_2.12" conf="default, compile, runtime, master" rev="3.14" rev-constraint-default="3.14" rev-constraint-dynamic="3.14" callerrev="0.18"/>
+				<artifacts>
+					<artifact name="poi-ooxml" type="jar" ext="jar" status="successful" details="" size="1286511" time="5621" location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml/jars/poi-ooxml-3.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.virtuald" name="curvesapi">
+			<revision name="1.03" status="release" pubdate="20151019162217" resolver="public" artresolver="public" homepage="https://github.com/virtuald/curvesapi" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="BSD License" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="3853" time="541" location="/home/dv/.ivy2/cache/com.github.virtuald/curvesapi/ivy-1.03.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/com.github.virtuald/curvesapi/ivy-1.03.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.pom"/>
+				<caller organisation="org.apache.poi" name="poi-ooxml" conf="compile, runtime" rev="1.03" rev-constraint-default="1.03" rev-constraint-dynamic="1.03" callerrev="3.14"/>
+				<artifacts>
+					<artifact name="curvesapi" type="jar" ext="jar" status="successful" details="" size="92241" time="2394" location="/home/dv/.ivy2/cache/com.github.virtuald/curvesapi/jars/curvesapi-1.03.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi-ooxml-schemas">
+			<revision name="3.14" status="release" pubdate="20160306090539" resolver="public" artresolver="public" homepage="http://poi.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2433" time="534" location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml-schemas/ivy-3.14.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml-schemas/ivy-3.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.pom"/>
+				<caller organisation="org.apache.poi" name="poi-ooxml" conf="compile, runtime" rev="3.14" rev-constraint-default="3.14" rev-constraint-dynamic="3.14" callerrev="3.14"/>
+				<artifacts>
+					<artifact name="poi-ooxml-schemas" type="jar" ext="jar" status="successful" details="" size="5919795" time="13043" location="/home/dv/.ivy2/cache/org.apache.poi/poi-ooxml-schemas/jars/poi-ooxml-schemas-3.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.xmlbeans" name="xmlbeans">
+			<revision name="2.6.0" status="release" pubdate="20130605144946" resolver="public" artresolver="public" homepage="http://xmlbeans.apache.org" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3403" time="627" location="/home/dv/.ivy2/cache/org.apache.xmlbeans/xmlbeans/ivy-2.6.0.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.apache.xmlbeans/xmlbeans/ivy-2.6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.pom"/>
+				<caller organisation="org.apache.poi" name="poi-ooxml-schemas" conf="compile, runtime" rev="2.6.0" rev-constraint-default="2.6.0" rev-constraint-dynamic="2.6.0" callerrev="3.14"/>
+				<artifacts>
+					<artifact name="xmlbeans" type="jar" ext="jar" status="successful" details="" size="2730866" time="7603" location="/home/dv/.ivy2/cache/org.apache.xmlbeans/xmlbeans/jars/xmlbeans-2.6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="stax" name="stax-api">
+			<revision name="1.0.1" status="release" pubdate="20060831143914" resolver="public" artresolver="public" homepage="http://stax.codehaus.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1526" time="562" location="/home/dv/.ivy2/cache/stax/stax-api/ivy-1.0.1.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/stax/stax-api/ivy-1.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom"/>
+				<caller organisation="org.apache.xmlbeans" name="xmlbeans" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="2.6.0"/>
+				<artifacts>
+					<artifact name="stax-api" type="jar" ext="jar" status="successful" details="" size="26514" time="2226" location="/home/dv/.ivy2/cache/stax/stax-api/jars/stax-api-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.poi" name="poi">
+			<revision name="3.14" status="release" pubdate="20160306085326" resolver="public" artresolver="public" homepage="http://poi.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3160" time="540" location="/home/dv/.ivy2/cache/org.apache.poi/poi/ivy-3.14.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/org.apache.poi/poi/ivy-3.14.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.pom"/>
+				<caller organisation="org.apache.poi" name="poi-ooxml" conf="compile, runtime" rev="3.14" rev-constraint-default="3.14" rev-constraint-dynamic="3.14" callerrev="3.14"/>
+				<caller organisation="info.folone" name="poi-scala_2.12" conf="default, compile, runtime, master" rev="3.14" rev-constraint-default="3.14" rev-constraint-dynamic="3.14" callerrev="0.18"/>
+				<artifacts>
+					<artifact name="poi" type="jar" ext="jar" status="successful" details="" size="2528204" time="7637" location="/home/dv/.ivy2/cache/org.apache.poi/poi/jars/poi-3.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.10" status="release" pubdate="20141106121535" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-codec/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="11609" time="753" location="/home/dv/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml" searched="true" original-local-location="/home/dv/.ivy2/cache/commons-codec/commons-codec/ivy-1.10.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.pom"/>
+				<caller organisation="org.apache.poi" name="poi" conf="compile, runtime" rev="1.10" rev-constraint-default="1.10" rev-constraint-dynamic="1.10" callerrev="3.14"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="284184" time="2923" location="/home/dv/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.10/commons-codec-1.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.6" status="release" pubdate="20180427054006" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2471" time="0" location="/home/dv/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.6/scala-library-2.12.6.pom"/>
+				<caller organisation="excel-scala" name="excel-scala_2.12" conf="compile-internal, compile, provided, optional" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="1.0.0"/>
+				<caller organisation="info.folone" name="poi-scala_2.12" conf="default, compile, runtime, master" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="0.18"/>
+				<caller organisation="org.scalaz" name="scalaz-core_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="7.2.8"/>
+				<caller organisation="org.scalaz" name="scalaz-effect_2.12" conf="compile, runtime" rev="2.12.6" rev-constraint-default="2.12.6" rev-constraint-dynamic="2.12.6" callerrev="7.2.8"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5267302" time="0" location="/home/dv/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.6.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

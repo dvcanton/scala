@@ -1,0 +1,10 @@
+[0m[[0m[31merror[0m] [0m[0m/media/dv/Disk1/code/scala/excel/src/main/scala/Hello.scala:25:14: not found: value Cell[0m
+[0m[[0m[31merror[0m] [0m[0m        case Cell.CELL_TYPE_STRING => {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/media/dv/Disk1/code/scala/excel/src/main/scala/Hello.scala:28:14: not found: value Cell[0m
+[0m[[0m[31merror[0m] [0m[0m        case Cell.CELL_TYPE_NUMERIC => {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/media/dv/Disk1/code/scala/excel/src/main/scala/Hello.scala:32:14: not found: value Cell[0m
+[0m[[0m[31merror[0m] [0m[0m        case Cell.CELL_TYPE_BLANK => {[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

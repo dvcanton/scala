@@ -1,0 +1,21 @@
+[0m[[0m[0minfo[0m] [0m[0mPackaging /media/dv/Disk1/code/scala/ml/target/scala-2.11/ml-for-spark_2.11-1.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$$anonfun$3.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logReg.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/logReg.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$$anonfun$testModel$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$$anonfun$testModel$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	logReg$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/logReg$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	sgdLG$$anonfun$3$$anonfun$4.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /media/dv/Disk1/code/scala/ml/target/scala-2.11/classes/sgdLG$$anonfun$3$$anonfun$4.class[0m
+[0m[[0m[0minfo[0m] [0m[0mDone packaging.[0m
